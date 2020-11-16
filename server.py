@@ -6,7 +6,7 @@ IP = '127.0.0.1'  # localhost
 PORT = 9999
 FORMAT = 'utf-8' # common format for encoding and decoding
 ADDR = (IP,PORT) # server socket address
-DISCONNECT = "DISCONNECT!"
+DISCONNECT = "exit "
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # first parameter - address family( eg IPv4 or IPv6 etc). second parameter - type of network protocol
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1) # can use same IP and port for different sockets

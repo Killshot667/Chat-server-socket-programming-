@@ -1,5 +1,4 @@
 import socket
-import select
 import errno # for handling errors
 import sys 
 
@@ -10,6 +9,8 @@ PORT = 9999
 ADDR = (IP,PORT)
 FORMAT = 'utf-8'
 my_username = input("Username: ")
+
+print("You are in!!(type 'exit' to get out of the chat server)")
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
